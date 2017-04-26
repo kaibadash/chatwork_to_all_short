@@ -10,6 +10,7 @@ javascript:(function() {
   ids.forEach(function(e) {
       result += "[To:" + e + "]";
   });
-  document.getElementById("_chatText").value = result + "\n";
+  document.getElementById("_chatText").value =
+    document.getElementById("_chatText").value + "\n" + result + "\n";
 })();
 
